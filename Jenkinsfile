@@ -6,7 +6,7 @@ pipeline {
   }
 
   environment {
-//    ARTIFACT_ID = "elbuo8/webapp:${env.BUILD_NUMBER}"
+    ARTIFACT_ID = "elbuo8/webapp:${env.BUILD_NUMBER}"
   }
    stages {
    stage('Building image') {
@@ -21,6 +21,8 @@ pipeline {
   
     stage('Run tests') {
       steps {
+        // cambio directorio
+        dir('webapp') 
         sh "docker run testapp npm test"
       }
     }
