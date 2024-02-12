@@ -1,10 +1,6 @@
 pipeline {
   agent any
 
-      environment {
-        DOCKER_HUB_CREDENTIALS = credentials('c337cd3c-6b5d-4453-b98a-961f8a84b2e8')
-    }
-
   options {
     timeout(time: 2, unit: 'MINUTES')
   }
