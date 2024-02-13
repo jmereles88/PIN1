@@ -7,7 +7,7 @@ pipeline {
 
     environment {
         ARTIFACT_ID = "elbuo8/webapp:${env.BUILD_NUMBER}"
-        DOCKER_HUB_CREDENTIALS = '131d3016-9c7c-41ef-a3b0-407a9cd5f400' // Reemplaza con el ID de tus credenciales de Docker Hub en Jenkins
+        DOCKER_HUB_CREDENTIALS = '116f1be2-c2d6-4429-b6a1-2a81d31b8834' // Reemplaza con el ID de mis credenciales de Docker Hub en Jenkins
         DOCKER_HUB_REGISTRY = 'docker.io' // Docker Hub Registry
         DOCKER_HUB_USERNAME = 'jmereles88' // Reemplaza con tu nombre de usuario de Docker Hub
         DOCKER_IMAGE_NAME = 'jmereles88/testapp' // Reemplaza con tu nombre de imagen en Docker Hub
